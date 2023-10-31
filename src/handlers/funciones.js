@@ -1,5 +1,5 @@
 module.exports = {
-    color, categ
+    color, categ, formatBytes
 }
 
 function color(texto, color) {
@@ -18,4 +18,13 @@ function categ(texto) {
         case "info": return "📔 INFORMACIÓN"
         case "test": return "🎀 COMANDOS"
     }
+}
+
+function formatBytes(a, b) {
+    C = 1024
+    d = b || 2
+    e = ['B', 'KB', 'MB', 'GB', 'TB']
+    f = Math.floor(Math.log(a) / Math.log(C))
+
+    return parseFloat((a / Math.pow(C, f)).toFixed(d)) + '' + e[f]
 }

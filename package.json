@@ -20,6 +20,7 @@
     "discord.js": "^14.12.1",
     "dotenv": "^16.3.1",
     "fs": "^0.0.1-security",
-    "gifencoder": "^2.0.1"
+    "gifencoder": "^2.0.1",
+    "mongoose": "^7.6.4"
   }
 }

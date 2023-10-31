@@ -1,12 +1,14 @@
 const { SlashCommandBuilder, EmbedBuilder, ButtonBuilder, ActionRowBuilder, ButtonStyle } = require("discord.js")
 CPUSTAT = require('cpu-stat')
-const { color } = require("../../handlers/funciones.js")
+const { color, formatBytes } = require("../../handlers/funciones.js")
 
 module.exports = {
 
-    CMD: new SlashCommandBuilder().setDescription("📔 | Mira el ping del bot"),
+    CMD: new SlashCommandBuilder().setDescription("📊 | Mira las estadísticas del bot"),
     
     run: (CLIENT, interaction) => {
+        if (!process.env.OWNERS.includes(interaction.member.id)) return interaction.reply({ content: `Solo los dueños del bot pueden ejecutar este comando.`, ephemeral:true })
+
         CPUSTAT.usagePercent(function (error, percent) {
             MEMORYUSAGE = formatBytes(process.memoryUsage().heapUsed)
             NODE = process.version
@@ -43,14 +45,5 @@ module.exports = {
 
             interaction.reply({ embeds: [EMBED], components:[ROW] })
         })
-
-        function formatBytes(a, b) {
-            C = 1024
-            d = b || 2
-            e = ['B', 'KB', 'MB', 'GB', 'TB']
-            f = Math.floor(Math.log(a) / Math.log(C))
-
-            return parseFloat((a / Math.pow(C, f)).toFixed(d)) + '' + e[f]
-        }
     }
 }
