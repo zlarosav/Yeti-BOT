@@ -18,7 +18,7 @@ Para información extra sobre el uso de este código, leer [LICENSE](https://git
 ## 2. Inicialización
 Recuerda instalar todas las dependencias necesarias. Escribe en tu terminal `$ npm install` o `$ npm i`
 
-Obtén información sobre las bibliotecas y sus versiones usadas en el archivo [package.json](https://github.com/zlarosav/Pyzza/blob/main/package.json)
+Obtén información sobre las bibliotecas y sus versiones usadas en el archivo [package.json](https://github.com/zlarosav/Yeti-BOT/blob/main/package.json)
 
 ## 3. Configuración
 Edita el código de `.env` con tus propios parámetros.
