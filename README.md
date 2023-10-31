@@ -1,10 +1,10 @@
 [![](https://img.shields.io/github/stars/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
 [![](https://img.shields.io/github/forks/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
-[![](https://img.shields.io/github/tag/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
-[![](https://img.shields.io/github/release/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
-[![](https://img.shields.io/github/issues/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
+[![](https://img.shields.io/github/tag/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT/releases/tag/v0.1.0-alpha)
+[![](https://img.shields.io/github/release/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT/releases/)
+[![](https://img.shields.io/github/issues/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT/issues/)
 
-# Pyzza - Open Source
+# Yeti - Open Source
 Para información extra sobre el uso de este código, leer [LICENSE](https://github.com/zlarosav/Yeti-BOT/blob/main/LICENSE)
 
 <a href="https://discord.com/invite/YKjDPGTAzY"><img width="500px" src="https://cdn.discordapp.com/attachments/1125702005197897760/1127984445509607495/BANNER.jpg"></a>
@@ -18,7 +18,7 @@ Para información extra sobre el uso de este código, leer [LICENSE](https://git
 ## 2. Inicialización
 Recuerda instalar todas las dependencias necesarias. Escribe en tu terminal `$ npm install` o `$ npm i`
 
-Obtén información sobre las bibliotecas y sus versiones usadas en el archivo [package.json](https://github.com/zlarosav/Pyzza/blob/main/package.json)
+Obtén información sobre las bibliotecas y sus versiones usadas en el archivo [package.json](https://github.com/zlarosav/Yeti-BOT/blob/main/package.json)
 
 ## 3. Configuración
 Edita el código de `.env` con tus propios parámetros.
