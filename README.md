@@ -1,8 +1,8 @@
 [![](https://img.shields.io/github/stars/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
 [![](https://img.shields.io/github/forks/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
-[![](https://img.shields.io/github/tag/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
-[![](https://img.shields.io/github/release/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
-[![](https://img.shields.io/github/issues/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
+[![](https://img.shields.io/github/tag/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT/releases/tag/v0.1.0-alpha)
+[![](https://img.shields.io/github/release/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT/releases/)
+[![](https://img.shields.io/github/issues/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT/issues/)
 
 # Yeti - Open Source
 Para información extra sobre el uso de este código, leer [LICENSE](https://github.com/zlarosav/Yeti-BOT/blob/main/LICENSE)
