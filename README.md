@@ -4,7 +4,7 @@
 [![](https://img.shields.io/github/release/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
 [![](https://img.shields.io/github/issues/zlarosav/Yeti-BOT.svg)](https://github.com/zlarosav/Yeti-BOT)
 
-# Pyzza - Open Source
+# Yeti - Open Source
 Para información extra sobre el uso de este código, leer [LICENSE](https://github.com/zlarosav/Yeti-BOT/blob/main/LICENSE)
 
 <a href="https://discord.com/invite/YKjDPGTAzY"><img width="500px" src="https://cdn.discordapp.com/attachments/1125702005197897760/1127984445509607495/BANNER.jpg"></a>
