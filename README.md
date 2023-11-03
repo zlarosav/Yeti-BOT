@@ -21,7 +21,7 @@ Recuerda instalar todas las dependencias necesarias. Escribe en tu terminal `$ n
 Obtén información sobre las bibliotecas y sus versiones usadas en el archivo [package.json](https://github.com/zlarosav/Yeti-BOT/blob/main/package.json)
 
 ## 3. Configuración
-Edita el código de `.env` con tus propios parámetros.
+Edita el código de [Ejemplo de .env](https://github.com/zlarosav/Yeti-BOT/blob/main/Ejemplo%20de%20.env) con tus propios parámetros en un archivo de nombre `.env`.
 1. Introduce el Token de tu Bot. Obténlo en [Portal Developer](https://discord.com/developers/applications)
 2. Introduce el Prefijo por default que usará tu Bot para los comandos de prefijo.
 3. Introduce tu propia URL de MongoDB, crea una cuenta y un cluster.
