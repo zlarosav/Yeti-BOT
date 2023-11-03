@@ -11,5 +11,5 @@ module.exports = (CLIENT) => {
         console.log(err)
     })
 
-    console.log(`Iniciado como: ${CLIENT.user.username}`.brightGreen)
+    console.log(`>> Bot iniciado como  :   ${CLIENT.user.username}`.brightGreen)
 }
