@@ -3,7 +3,6 @@ const { REST } = require("@discordjs/rest")
 const { Routes } = require('discord-api-types/v9')
 
 module.exports = async (CLIENT) => {
-    
     try {
         let slashCantidad = 0
         LISTA = []
@@ -14,14 +13,13 @@ module.exports = async (CLIENT) => {
             
             for (let archivo of ARCHIVOS) {
                 let comando = require(`../slashcommands/${folder}/${archivo}`)
-                const NOMBRE_COMANDO = archivo.split(".")[0]
+                NOMBRE_COMANDO = archivo.split(".")[0]
                 comando.CMD.name = NOMBRE_COMANDO
 
                 if (comando.CMD.name) {
                     CLIENT.slash.set(comando.CMD.name, comando)
                     LISTA.push(comando.CMD.toJSON())
                     slashCantidad++
-                    
                 } else {
                     console.log(`Error SLASH: [/${folder}/${archivo}]`.brightRed)
                     continue
@@ -29,16 +27,13 @@ module.exports = async (CLIENT) => {
             }
         }
 
-        const rest = new REST({ version: "9" }).setToken(process.env.TOKEN)
-
+        CREST = new REST({ version: "9" }).setToken(process.env.TOKEN)
         try { 
-            await rest.put(Routes.applicationCommands("941529412799709195"), { body: LISTA })
-            console.log(`${slashCantidad} slashcommands cargados.`.brightGreen)
-            
+            await CREST.put(Routes.applicationCommands(process.env.CLIENTID), { body: LISTA })
+            console.log(`>> Slashcmd cargados  :   ${slashCantidad}`.brightGreen)
         } catch (e) {
             console.error(e)
         }
-        
     } catch (e) {
         console.error(e)
     }

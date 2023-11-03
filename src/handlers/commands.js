@@ -17,7 +17,7 @@ module.exports = (CLIENT) => {
                 if (COMANDO.aliases && Array.isArray(COMANDO.aliases)) COMANDO.aliases.forEach((alias) => CLIENT.aliases.set(alias, COMANDO.name));
             }
         });
-        console.log(`${cantidad} Comandos cargados`.brightGreen)
+        console.log(`>> Comandos cargados  :   ${cantidad} `.brightGreen)
     } catch(e){
         console.error(e)
     }

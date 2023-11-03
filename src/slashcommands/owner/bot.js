@@ -4,7 +4,8 @@ const { color, formatBytes } = require("../../handlers/funciones.js")
 
 module.exports = {
 
-    CMD: new SlashCommandBuilder().setDescription("📊 | Mira las estadísticas del bot"),
+    CMD: new SlashCommandBuilder()
+    .setDescription("📊 | Mira las estadísticas del bot"),
     
     run: (CLIENT, interaction) => {
         if (!process.env.OWNERS.includes(interaction.member.id)) return interaction.reply({ content: `Solo los dueños del bot pueden ejecutar este comando.`, ephemeral:true })

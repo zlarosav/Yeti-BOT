@@ -13,10 +13,12 @@ function color(texto, color) {
 
 function categ(texto) {
     switch (texto) {
-        case "eco": return "💸 ECONOMÍA"
-        case "admin": return "👑 ADMINISTRACIÓN"
         case "info": return "📔 INFORMACIÓN"
-        case "test": return "🎀 COMANDOS"
+        case "mod": return "🔰 MODERACIÓN"
+        case "owner": return "👑 DUEÑO"
+        case "setup": return "🔩 SETUP"
+        case "eco": return "💸 ECONOMÍA"
+        case "fun": return "🎪 DIVERSIÓN"
     }
 }
 

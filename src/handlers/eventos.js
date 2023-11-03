@@ -2,7 +2,6 @@ FS = require("fs")
 
 module.exports = (CLIENT) => {
     try {
-        console.log("Cargando los eventos...".yellow)
         let eventosCantidad = 0
         CARPETA = FS.readdirSync("./src/eventos/")
         for (let folder of CARPETA) {
@@ -15,7 +14,7 @@ module.exports = (CLIENT) => {
                 eventosCantidad++
             }
         }
-        console.log(`${eventosCantidad} eventos cargados`.brightGreen)
+        console.log(`>> Eventos cargados   :   ${eventosCantidad}`.brightGreen)
     
     } catch (e) {
         console.error(`${e}`.brightRed)

@@ -2,11 +2,8 @@ const { EmbedBuilder } = require("discord.js")
 
 module.exports = async (CLIENT, interaction) => {
     if (interaction.isCommand()) {
-
         SLASH = CLIENT.slash.get(interaction.commandName)
-
         if (!SLASH) return
-
         try {
             await SLASH.run(CLIENT, interaction)
         } catch (e) {
