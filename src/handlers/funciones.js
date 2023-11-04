@@ -1,5 +1,5 @@
 module.exports = {
-    color, categ, formatBytes
+    color, categ, formatBytes, entablar
 }
 
 function color(texto, color) {
@@ -13,13 +13,31 @@ function color(texto, color) {
 
 function categ(texto) {
     switch (texto) {
-        case "info": return "📔 INFORMACIÓN"
-        case "mod": return "🔰 MODERACIÓN"
-        case "owner": return "👑 DUEÑO"
-        case "setup": return "🔩 SETUP"
-        case "eco": return "💸 ECONOMÍA"
-        case "fun": return "🎪 DIVERSIÓN"
+        case "eco"  : return "💸 Economía"
+        case "fun"  : return "🎪 Diversión"
+        case "info" : return "📔 Información"
+        case "mod"  : return "🔰 Moderación"
+        case "nivel": return "📈 Niveles"
+        case "owner": return "👑 Dueño"
+        case "setup": return "🔩 Configuración"
     }
+}
+
+function entablar(array) {
+    let tabla = ""
+    array.forEach((string, index) => {
+        TEXTO = (string.endsWith('.js')) ? string.replace(/.js/, "") : categ(string)
+        tabla += (TEXTO.includes(" ")) ? TEXTO.split(" ")[1] : TEXTO
+        ESPACIOS = (TEXTO.includes(" ")) ? 24 - TEXTO.length : 16 - TEXTO.length
+        if ((index+1) % 3 == 0 || index+1 == array.length) {
+            tabla += "\n"
+        } else {
+            for (let i=0; i <= ESPACIOS; i++) {
+                tabla += " "
+            }
+        }
+    })
+    return tabla
 }
 
 function formatBytes(a, b) {

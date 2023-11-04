@@ -8,20 +8,20 @@ module.exports = async (CLIENT) => {
         LISTA = []
         CARPETA = FS.readdirSync(`./src/slashcommands/`)
         
-        for (let folder of CARPETA) {
-            ARCHIVOS = FS.readdirSync(`./src/slashcommands/${folder}`).filter(comando => comando.endsWith(".js"))
+        for (FOLDER of CARPETA) {
+            ARCHIVOS = FS.readdirSync(`./src/slashcommands/${FOLDER}`).filter(comando => comando.endsWith(".js"))
             
-            for (let archivo of ARCHIVOS) {
-                let comando = require(`../slashcommands/${folder}/${archivo}`)
-                NOMBRE_COMANDO = archivo.split(".")[0]
-                comando.CMD.name = NOMBRE_COMANDO
+            for (FILE of ARCHIVOS) {
+                COMANDO = require(`../slashcommands/${FOLDER}/${FILE}`)
+                NOMBRE_COMANDO = FILE.split(".")[0]
+                COMANDO.CMD.name = NOMBRE_COMANDO
 
-                if (comando.CMD.name) {
-                    CLIENT.slash.set(comando.CMD.name, comando)
-                    LISTA.push(comando.CMD.toJSON())
+                if (COMANDO.CMD.name) {
+                    CLIENT.slash.set(COMANDO.CMD.name, COMANDO)
+                    LISTA.push(COMANDO.CMD.toJSON())
                     slashCantidad++
                 } else {
-                    console.log(`Error SLASH: [/${folder}/${archivo}]`.brightRed)
+                    console.log(`Error SLASH: [/${FOLDER}/${FILE}]`.brightRed)
                     continue
                 }
             }
